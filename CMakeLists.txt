@@ -1,0 +1,6 @@
+#cmake_mininum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 2.8)
+project(fisheye)
+find_package(OpenCV REQUIRED)
+add_executable(fisheye main.cpp)
+target_link_libraries(fisheye ${OpenCV_LIBS})
